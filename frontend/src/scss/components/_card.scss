@@ -1,0 +1,181 @@
+.search-program-card {
+	max-width: 35rem;
+	cursor: pointer;
+	background-color: $white-color;
+	box-shadow: $small-box-shadow-black;
+	&:hover {
+		box-shadow: $shadow-light;
+	}
+ 	&__body {
+		width: 100%;
+		height: 8rem;
+		position: relative;
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		padding: 1rem 1rem;
+
+		&--img {
+
+		}
+		&--content {
+			padding: 2rem;
+			&--title {
+				font-size: 1.8rem;
+				font-weight: 500;
+			}
+			&--info {
+				list-style: none;
+				&__item {
+					display: inline-block;
+					padding-right: 1.5rem;
+				}
+			}
+		}
+	}
+}
+
+.search-course-card {
+	background-color: $white-color;
+	box-shadow: $small-box-shadow-black;
+	&:hover {
+		cursor: pointer;
+	}
+ 	&__body {
+		overflow:hidden;
+		width: 100%;
+		position: relative;
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+
+		&--content {
+			width: 100%;
+			padding-left: 2rem;
+			&--title {
+				font-size: 2rem;
+				font-weight: 500;
+
+			}
+			&--info {
+				list-style: none;
+				display: flex;
+				justify-content: flex-start;
+				align-items: flex-end;
+				margin-bottom: 0;
+				&__item {
+					display: inline-block;
+					padding-right: 5rem;
+					font-size: 1.6rem;
+					//width: 15%;
+					flex: 0 0 25%;
+					color: rgba(0,0,0,0.75);
+				}
+				.item-author {
+					//width: 25%;
+				}
+
+			}
+		}
+	}
+}
+
+
+
+
+.field-card {
+	overflow: hidden;
+	padding: 1rem;
+	background-color: white;
+	height: 26rem;
+	transition: all 0.2s ease-in-out;
+	box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+	&:hover {
+			box-shadow: 0 1rem 2rem rgba(0,0,0,0.4);
+			transform:  scale(1.02);
+		}
+	&__body {
+		height: 100%;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		position: relative;
+		box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.2);
+
+
+		&--title {
+			background-color: rgba(0,0,0,0.3);
+			padding: 1rem 2rem;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+			font-size: 3.5rem;
+			font-weight: 500;
+			color: $white-color;
+		}
+	}
+}
+
+.course-card-sub {
+	padding : 2rem;
+	&__teacher {
+		font-size: 1.4rem;
+		color: $color-grey-dark-2;
+	}
+
+	&__title {
+		font-weight: 500;
+	}
+	&__others {
+
+	}
+}
+
+.course-cards {
+	&__items {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+		grid-gap: 3rem;
+	}
+}
+
+.course-card {
+	cursor: pointer;
+	background-color: #fff;
+	max-width: 28rem;
+	box-shadow: 0 5px 10px rgba(0,0,0,0.08);
+	transition: all 0.1s ease-in-out;
+	img {
+		width: 100%;
+		max-height: 20rem;
+	}
+	&:hover {
+		transform: scale(1.01);
+	box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+
+	}
+}
+
+.ability-test-card {
+	background-color: $white-color;
+	padding: 2rem 5rem;
+	//box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.05);
+	cursor: pointer;
+	transition: all 0.1s ease-in-out;
+	&:hover {
+		transform: translateY(-0.5rem) scale(1.05);
+		box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.05);
+	}
+
+	span {
+		color: rgba(0,0,0,0.6);
+		font-size: 1.8rem;
+		font-weight: 600;
+	}
+
+}
+
+.odd-card {
+	background-color: #80c6ff1c;
+}

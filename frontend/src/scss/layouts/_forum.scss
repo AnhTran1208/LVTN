@@ -1,0 +1,93 @@
+.forum {
+    &--subtitle {
+        color: black;
+    }
+
+    &--content {
+        &__list {
+            width: 100%;
+
+            .ant-list-item {
+                cursor: pointer;
+                transition: all 0.1s ease-in-out;
+
+                &:hover {
+                    background-color: rgba($theme-green-color, 0.05);
+                }
+            }
+        }
+
+
+    }
+
+    &--list-header {
+        font-size: 1.8rem;
+        color: black;
+    }
+
+    &--tag {
+        font-size: 1.5rem;
+        padding: 0.3rem 0.8rem;
+        cursor: pointer;
+    }
+}
+
+.forum-item {
+    width: 100%;
+
+    &--title {
+        font-weight: 600;
+        color: black;
+        font-size: 1.9rem;
+    }
+
+    &--text {
+        font-size: 1.4rem;
+        width: 65%;
+    }
+}
+
+.forum-detail {
+    padding-bottom: 5rem;
+}
+
+.thread {
+    &--header {
+        &__title {
+            font-size: 1.9rem;
+            font-weight: 500;
+        }
+    }
+
+    &--user {
+        color: #048dfd;
+    }
+
+    &--description {
+        &__content {
+            color: rgba(black, 0.7);
+            font-size: 1.6rem;
+        }
+    }
+
+    &--reply-card {
+        border: 1px solid #d8d8d8;
+    }
+
+    &--modal {
+        .ant-modal-header {
+            background-color: rgba(lightgrey, 0.2);
+        }
+
+        .ant-modal-footer {
+            background-color: rgba(lightgrey, 0.2);
+        }
+
+        width: 80%;
+        padding-bottom: 0
+    }
+
+    &--form {
+
+    }
+}

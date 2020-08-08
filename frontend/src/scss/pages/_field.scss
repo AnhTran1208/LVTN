@@ -1,0 +1,21 @@
+.field-page {
+  h3 {
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 5rem;
+  }
+}
+
+.field-overview {
+  &--cats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(40rem, 1fr));
+    grid-gap: 3rem;
+  }
+}
+
+.field-detail {
+  &__content {
+    width: 100%;
+  }
+}

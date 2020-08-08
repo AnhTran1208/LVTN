@@ -1,0 +1,19 @@
+
+@import 'vendors/bootstrap';
+// @import 'vendors/fontawesome';
+
+
+@import 'utils/functions';
+@import 'utils/variables';
+@import 'utils/mixin';
+
+@import 'base/animations';
+@import 'base/base';
+@import 'base/typography';
+
+@import 'components/component';
+
+@import 'layouts/index';
+
+@import 'pages/index';
+

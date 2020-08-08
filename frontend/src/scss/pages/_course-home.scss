@@ -1,0 +1,99 @@
+.course-home {
+    background-color: white !important;
+    .course-home-sider {
+        .ant-layout-sider-trigger {
+            top: 6.5rem
+        }
+       min-height: 100vh;
+        //background-color: #001529;
+        h3 {
+            text-align: center;
+            padding-bottom: 2rem;
+        }
+
+        padding: 20vh 0rem;
+
+        .ant-menu-item {
+            font-size: 1.7rem;
+            font-weight: 500;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+    }
+}
+
+.course-home-info {
+    font-size: 1.8rem;
+}
+
+.course-topic {
+    margin-bottom: 2rem;
+    border: 1px solid rgba(#65c9f6, 0.4);
+    border-radius: 0.8rem;
+    padding: 1rem 2rem;
+    //box-shadow: 0 3px 5px rgba(0,0,0,0.05);
+    &__info {
+        font-size: 1.6rem;
+        padding: 2rem;
+        background-color: rgba($theme-green-color, 0.05);
+    border-radius: 0.8rem;
+
+        ul {
+            padding-left: 3rem;
+        }
+    }
+
+    &__content {
+        &--item {
+            cursor: pointer;
+            .ant-list-item-meta-title {
+                font-weight: 600;
+            }
+        }
+    }
+    &__header {
+        padding-bottom: 1rem;
+        font-size: 2.6rem;
+    }
+}
+
+.course-lecture {
+    &--title {
+        font-weight: 500;
+    }
+
+    &--video {
+        width: 70rem;
+    }
+}
+
+.exam-list {
+    &--title {
+        padding: 1rem;
+        background-color: rgba(#01C9F5, 0.05);
+        margin-bottom: 2rem;
+        border-radius: 1rem;
+        h3 {
+            span {
+                margin-left: 1rem;
+                font-size: 1.6rem;
+                font-weight: 400;
+                font-style: italic;
+                color: darkgrey;
+            }
+        }
+    }
+
+    button {
+        margin: 0 auto;
+    }
+}
+
+.exam_drawer {
+    .ant-drawer-content-wrapper {
+        width: 100% !important;
+    }
+}

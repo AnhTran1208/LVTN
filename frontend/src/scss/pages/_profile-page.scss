@@ -1,0 +1,12 @@
+
+.profile-page {
+    margin-top: 15vh;
+    &--title {
+        font-size: 4rem;
+        margin-bottom: 5rem;
+    }
+    &--body {
+        display: flex;
+        justify-content: flex-start;
+    }
+}

@@ -1,0 +1,79 @@
+.section-banner {
+	&::before {
+		position: absolute;
+		//content: url("../../assets/banner-background.png");
+		right: 0;
+		top: 13rem;
+		z-index: -1;
+		// animation: floating 6s 2s ease-in-out infinite;
+	}
+	margin: 0 auto;
+	position: relative;
+	z-index: 1;
+	height: 90rem;
+	background-image: $site-linear;
+	.banner-content {
+		.banner-content-left {
+			position: absolute;
+			top: 23rem;
+			left: 0;
+			z-index: 900;
+			max-width: 50%;
+			padding-left: 10rem;
+
+			.banner-slogan {
+				h1 {
+					font-size: 5rem;
+					color: $white-color;
+				}
+				p {
+					margin-top: 2rem;
+				}
+				.main-slogan--text {
+					color: $white-color;
+				}
+			}
+
+			.banner-description {
+				h5 {
+					font-size: 2rem;
+					font-weight: 400;
+					line-height: 2.8rem;
+					color: $white-color;
+
+				}
+			}
+			.cs-btn--banner {
+				&,
+				&:link,
+				&:visited {
+					margin-top: 5rem;
+					//margin-left: 30%;
+				}
+			}
+
+		}
+
+		.banner-content-right {
+			position: absolute;
+			top: 10.5rem;
+			right: 0;
+		}
+	}
+}
+
+
+.section-field-banner{
+	&__content {
+		width: 100%;
+		height: 30rem;
+		justify-content: flex-start;
+		align-items: center;
+		padding-left: 5rem;
+		h1 {
+			display: inline-block;
+			padding-bottom: 1rem;
+			border-bottom: 1px solid white;
+		}
+	}
+}

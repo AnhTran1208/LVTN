@@ -1,0 +1,179 @@
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+	outline: none;
+}
+
+html {
+	font-size: 62.5%;
+	@include responsive(tab-land) { // width < 1200?
+        font-size: 56.25%; //1 rem = 9px, 9/16 = 50%
+    }
+
+    @include responsive(tab-port) { // width < 900?
+        font-size: 50%; //1 rem = 8px, 8/16 = 50%
+    }
+
+    @include responsive(big-desktop) {
+        font-size: 75%; //1rem = 12, 12/16
+    }
+}
+
+body {
+    box-sizing: border-box;
+	background-color: #ffffff;
+    @include responsive(tab-port) {
+        padding: 0;
+    }
+}
+
+.preload-transitions * {
+  // Dry this up a bit with SCSS variable
+  $null-transition: none !important;
+
+  -webkit-transition: $null-transition;
+  -moz-transition: $null-transition;
+  -ms-transition: $null-transition;
+  -o-transition: $null-transition;
+  transition: $null-transition;
+}
+
+.content {
+	min-height: 100vh;
+}
+
+// clear bootstrap input effects.
+textarea:focus,
+textarea.form-control:focus,
+input.form-control:focus,
+input[type=text]:focus,
+input[type=password]:focus,
+input[type=email]:focus,
+input[type=number]:focus,
+[type=text].form-control:focus,
+[type=password].form-control:focus,
+[type=email].form-control:focus,
+[type=tel].form-control:focus,
+[contenteditable].form-control:focus,
+button:link, button:visited, button:active, button:focus
+{
+	outline: none !important;
+	-webkit-appearance: none;
+	box-shadow: none !important;
+}
+
+button, input {
+	border-radius: 0;
+}
+
+.section {
+	padding-left: 12rem;
+	padding-right: 12rem;
+}
+
+.section-5 {
+	padding-left: 5rem;
+	padding-right: 5rem;
+}
+
+.section-7 {
+	padding-left: 12rem;
+	padding-right: 12rem;
+}
+
+.section-10 {
+	padding-left: 12rem;
+	padding-right: 12rem;
+}
+
+
+.mt-10 {
+	margin-top: 10rem;
+}
+
+
+.behind-spinner {
+	filter: brightness(50%);
+	-webkit-filter: brightness(50%);
+}
+
+.bradius {
+	border-radius: 1rem !important;
+}
+
+.page {
+	margin-top: 15vh;
+	position: relative;
+	min-height: 80vh;
+	padding-bottom: 5rem;
+	&__content {
+		background-color: white;
+	}
+}
+
+.page-2 {
+	width: 100%;
+	margin-top: 12vh;
+	padding-bottom: 10rem;
+	.ant-modal {
+		padding-bottom: 0px !important;
+	  }
+}
+
+.pd-5 {
+	padding: 0 5rem;
+}
+
+.toggle-text {
+	margin: 1rem 0 1.5rem 0;
+	cursor: pointer;
+	font-size: 1.7rem;
+	font-weight: 500;
+	text-transform: uppercase;
+	color: $theme-font-color;
+}
+
+.white-bg {
+	background-color: $white-color;
+}
+
+.dis-flex-start {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.dis-flex-start-start{
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-wrap: wrap;
+}
+
+.dis-flex-between {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.dis-flex-col {
+	display: flex;
+	flex-direction: column;
+}
+
+.dis-grid-cards {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+	grid-column-gap: 2rem;
+}
+
+// .section-learn {
+// 	width: 100%;
+// 	background-color: white;
+// 	padding-top: 6rem;
+// }

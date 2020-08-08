@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css?family=Livvic:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,900,900i&display=swap&subset=vietnamese');
+
+// @font-face {
+// 	font-family: 'Livvic';
+// 	src: url('../../assets/font/Livvic/Livvic-Black.ttf')  format('truetype');
+// 	font-weight: bolder;
+// }
+
+// @font-face {
+// 	font-family: 'Livvic';
+// 	src: url('../../assets/font/Livvic/Livvic-BlackItalic.ttf')  format('truetype');
+// 	font-style: italic;
+// 	font-weight: bolder;
+// }
+
+// @font-face {
+// 	font-family: 'Livvic';
+// 	src: 	url('../../assets/font/Livvic/Livvic-Bold.ttf')  format('truetype');
+// 	font-weight: bold;
+// }
+
+// @font-face {
+// 	font-family: 'Livvic';
+// 	src: 	url('../../assets/font/Livvic/Livvic-BoldItalic.ttf')  format('truetype');
+// 	font-weight: bold;
+// 	font-style: italic;
+// }
+
+// @font-face {
+// 	font-family: 'Livvic';
+// 	src: 	url('../../assets/font/Livvic/Livvic-ExtraLight.ttf')  format('truetype');
+// 	font-weight: lighter;
+// }
+
+// @font-face {
+// 	font-family: 'Livvic';
+// 	src: 	url('../../assets/font/Livvic/Livvic-ExtraLightItalic.ttf')  format('truetype');
+// 	font-weight: lighter;
+// 	font-style: italic;
+// }
+
+// @font-face {
+// 	font-family: 'Livvic';
+// 	src: 	url('../../assets/font/Livvic/Livvic-Italic.ttf')  format('truetype');
+// 	font-style: italic;
+// }
+
+// @font-face {
+// 	font-family: 'Livvic';
+// 	src: 	url('../../assets/font/Livvic/Livvic-Light.ttf')  format('truetype');
+// 	font-weight: 300;
+// }
+
+// @font-face {
+// 	font-family: 'Livvic';
+// 	src: 	url('../../assets/font/Livvic/Livvic-LightItalic.ttf')  format('truetype');
+// 	font-weight: 300;
+// 	font-style: italic;
+// }
+
+// @font-face {
+// 	font-family: 'Livvic';
+// 	src: 	url('../../assets/font/Livvic/Livvic-Medium.ttf')  format('truetype');
+// 	font-weight: 500;
+// }
+
+// @font-face {
+// 	font-family: 'Livvic';
+// 	src: 	url('../../assets/font/Livvic/Livvic-MediumItalic.ttf')  format('truetype');
+// 	font-weight: 500;
+// 	font-style: italic;
+// }
+
+// @font-face {
+// 	font-family: 'Livvic';
+// 	src: 	url('../../assets/font/Livvic/Livvic-Regular.ttf')  format('truetype');
+// }
+
+body {
+	font-weight: 400;
+	line-height: 1.7;
+	font-family: 'Livvic', sans-serif;
+	// font-family: 'Bellota', cursive;
+	// font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    // 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    // sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.text {
+	&--variable {
+		font-size: 1.6rem;
+	}
+
+	//&--const {
+	//	font-size: 1.5rem;
+	//	color: $color-grey-dark-3;
+	//}
+	&--info {
+		font-size: $info-font-size;
+		font-weight: 500;
+	}
+	&--sub {
+		font-size: 1.2rem;
+
+		&__medium {
+			font-size: 1.5rem;
+			color: $text-color-gray;
+		}
+
+		&__bigger {
+		font-size: 1.6rem;
+		}
+
+		&__bigger2 {
+			font-size: 1.8rem;
+		}
+
+		&__bigger3 {
+			font-size: 2rem;
+		}
+
+		&__600 {
+			font-weight: 600;
+		}
+
+		&__700 {
+			font-weight: 700;
+		}
+	}
+
+
+	&--main {
+		font-size: 3rem;
+		font-weight: 700;
+		color: $theme-green-color;
+
+		&__smaller {
+			font-size: 2.5rem;
+		}
+
+		&__bigger {
+			font-size: 3.5rem;
+		}
+		&__no-bold {
+			font-weight: 400;
+		}
+
+	}
+}
+
+.link {
+	&--no-decoration{
+		text-decoration: none !important;
+	}
+}
+
+.theme-color {
+	color: $theme-green-color
+}
+
+.theme-font-color {
+	color: $theme-font-color
+}
+
+.down-indict {
+	color: $theme-font-color;
+	font-size: 1.6rem;
+}
+
+
+.b-500 {
+	font-weight: 500;
+}
+
+.text-info-sub {
+	color: rgba(black, 0.7);
+	font-weight: 400;
+	font-size: 1.4rem;
+}
+
+.text-info-normal {
+	color: rgba(black, 0.8);
+	font-weight: 400;
+	font-size: 1.6rem;
+}
+
+.text-black {
+	color: #000000;
+}
+
+.text-red {
+	color: red;
+}
